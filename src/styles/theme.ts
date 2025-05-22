@@ -9,8 +9,8 @@ export const theme: ThemeType = {
     foreground: "#CCCCCC", // Muted text color
   },
   fontFamily: {
-    sans: ["Inter", "sans-serif"],
-    serif: ["Georgia", "serif"],
+    sans: ["Poppins", "sans-serif"],
+    serif: ["Inter", "serif"],
   },
   borderRadius: {
     DEFAULT: "0.5rem",
