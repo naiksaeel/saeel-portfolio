@@ -2,18 +2,18 @@ import { ThemeType } from "@/types/themeTypes";
 
 export const theme: ThemeType = {
   colors: {
-    primary: "#166534", // Green-700
-    secondary: "#4ADE80", // Green-400
-    accent: "#65A30D", // Green-600
-    background: "#ECFDF5", // Light Green background
-    foreground: "#14532D", // Dark Green text
+    primary: "#1F2235", // Deep navy background
+    secondary: "#FFC12D", // Yellow-orange accent
+    accent: "#FFFFFF", // White text or highlight
+    background: "#111321", // Slightly darker navy for sections
+    foreground: "#CCCCCC", // Muted text color
   },
   fontFamily: {
-    sans: ["Roboto", "sans-serif"],
-    serif: ["Times New Roman", "serif"],
+    sans: ["Inter", "sans-serif"],
+    serif: ["Georgia", "serif"],
   },
   borderRadius: {
-    DEFAULT: "0.25rem",
-    lg: "0.75rem",
+    DEFAULT: "0.5rem",
+    lg: "1rem",
   },
 };
