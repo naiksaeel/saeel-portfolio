@@ -1,22 +1,25 @@
+// data
+import { profileData } from "@/data/myInfo";
+
+import LeftSection from "@/components/hero/leftSection";
+import RightSection from "@/components/hero/rightSection";
+
 const Hero = () => {
+  const { bioData, designation, location, socials } = profileData;
+
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-12 gap-12">
-      <div className="max-w-xl space-y-6">
-        <h2 className="text-5xl font-extrabold leading-tight text-white">
-          Software developer
-        </h2>
-        <p className="text-lg text-foreground">Software developer</p>
-        {/* <a
-          href="#contact"
-          className="text-secondary font-medium border-b border-secondary"
-        >
-          My Story →
-        </a> */}
+    <section className="relative bg-primary text-white font-sans overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 flex flex-col md:flex-row items-center justify-between gap-10 min-h-96">
+        {/* Left: Name & Socials */}
+        <LeftSection socials={socials} />
+
+        {/* Right: Introduction */}
+        <RightSection
+          designation={designation}
+          location={location}
+          bioData={bioData}
+        />
       </div>
-      <div
-        className="w-[300px] h-[400px] bg-cover bg-center rounded-xl shadow-xl"
-        style={{ backgroundImage: `url('/your-image.png')` }}
-      />
     </section>
   );
 };
