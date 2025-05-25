@@ -1,3 +1,4 @@
+// components
 import ContactSection from "@/components/contactAndInfo/contactSection";
 import InfoSection from "@/components/contactAndInfo/infoSection";
 import SectionContainer from "@/components/ui/sectionContainer";

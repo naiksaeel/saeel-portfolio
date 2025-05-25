@@ -1,4 +1,6 @@
+// types
 import { IconType } from "react-icons";
+import { AOSAnimation } from "@/types/common";
 
 export type Link = {
   label: string;
@@ -23,4 +25,5 @@ export type CardType = {
 };
 export type CardProps = CardType & {
   className?: string;
+  dataAOS?: AOSAnimation;
 };

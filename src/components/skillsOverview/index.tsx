@@ -2,6 +2,9 @@
 import Card from "@/components/card";
 import SectionContainer from "@/components/ui/sectionContainer";
 
+// animations
+import { FadeUp } from "@/components/animation";
+
 // data
 import { cardData } from "@/data/cards";
 
@@ -13,7 +16,9 @@ const ProjectCards = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
             {cardData.map((card, idx) => (
               <div key={idx} className="max-w-xl mx-auto w-full h-full">
-                <Card {...card} className="h-full" />
+                <FadeUp className="h-full">
+                  <Card {...card} className="h-full" dataAOS="fade-up" />
+                </FadeUp>
               </div>
             ))}
           </div>
