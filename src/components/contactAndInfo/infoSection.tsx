@@ -2,7 +2,7 @@
 import { profileData, extras } from "@/data/myInfo";
 
 // animations
-import { FadeUp } from "@/components/animation";
+import { FadeUp } from "@/animations";
 
 const InfoSection = () => {
   const { yearsOfExp, technologies } = profileData;

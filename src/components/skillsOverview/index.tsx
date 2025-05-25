@@ -3,7 +3,7 @@ import Card from "@/components/card";
 import SectionContainer from "@/components/ui/sectionContainer";
 
 // animations
-import { FadeUp } from "@/components/animation";
+import { FadeUp } from "@/animations";
 
 // data
 import { cardData } from "@/data/cards";

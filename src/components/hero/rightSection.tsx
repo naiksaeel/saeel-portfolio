@@ -2,7 +2,7 @@
 import { ProfileDataType } from "@/types/profile";
 
 // animations
-import { SlideLeft } from "@/components/animation";
+import { SlideLeft } from "@/animations";
 
 type RightSectionProps = Pick<
   ProfileDataType,

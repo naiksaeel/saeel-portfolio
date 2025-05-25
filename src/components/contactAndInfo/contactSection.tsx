@@ -2,7 +2,7 @@
 import { profileData, contactSection } from "@/data/myInfo";
 
 // animations
-import { FadeUp } from "@/components/animation";
+import { FadeUp } from "@/animations";
 
 const ContactSection = () => {
   const { emailId } = profileData;

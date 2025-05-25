@@ -2,7 +2,7 @@
 import SocialIconLink from "@/components/ui/SocialIconLink";
 
 // animations
-import { FadeLeft, FadeUpRight } from "@/components/animation";
+import { FadeLeft, FadeUpRight } from "@/animations";
 
 // types
 import type { IconBaseProps } from "react-icons";
