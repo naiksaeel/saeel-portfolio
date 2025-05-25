@@ -10,7 +10,6 @@ This is the source code for Saeel Naik’s personal portfolio website, built wit
 - **Clean and responsive UI**: Showcasing professional profile and projects.
 - **Social links**: Connect with Saeel via LinkedIn and GitHub.
 - **Contact section**: Encourages collaboration and knowledge sharing.
-- **Quotes and insights**: Reflect Saeel’s philosophy on technology and development.
 
 ## Profile Summary
 
