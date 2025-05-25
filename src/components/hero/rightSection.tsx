@@ -16,10 +16,14 @@ const RightSection = ({
         <p className="text-lg tracking-widest text-gray-400 my-1">
           — Introduction
         </p>
-        <h2 className="text-2xl font-bold text-white max-w-md">
-          {designation}, based in {location}.
+        <h2 className="text-2xl font-bold text-white max-w-md mb-6">
+          {designation} · {location}
         </h2>
-        <p className="text-gray-400 text-sm max-w-md mt-2">{bioData}</p>
+        {bioData.map((para, idx) => (
+          <p key={idx} className="text-gray-400 text-sm max-w-md mt-2">
+            {para}
+          </p>
+        ))}
       </div>
     </div>
   );

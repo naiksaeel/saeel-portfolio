@@ -11,12 +11,14 @@ const ContactSection = () => {
       <h2 className="text-2xl font-semibold mb-6">{heading}</h2>
       <p className="text-gray-400 mb-7">{paragraph}</p>
 
-      <a
-        href={`mailto:${emailId}`}
-        className="text-secondary font-semibold hover:underline"
-      >
-        {emailId}
-      </a>
+      {emailId && (
+        <a
+          href={`mailto:${emailId}`}
+          className="text-secondary font-semibold hover:underline"
+        >
+          {emailId}
+        </a>
+      )}
     </div>
   );
 };

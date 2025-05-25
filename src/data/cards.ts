@@ -22,6 +22,7 @@ export const cardData: CardType[] = [
       "React",
       "React Native",
       "TypeScript",
+      "Redux",
       "Vue.js",
       "Next.js",
       "Tailwind CSS",

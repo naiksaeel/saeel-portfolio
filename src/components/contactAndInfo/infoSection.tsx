@@ -10,16 +10,22 @@ const InfoSection = () => {
       <p className="text-gray-400 text-sm max-w-md my-2">{quoteSummary}</p>
       <div className="flex gap-12  my-6 ">
         {/* Years of Experience */}
-        <div className="flex items-center gap-2 ">
-          <p className="text-3xl font-bold text-secondary">{yearsOfExp}+</p>
-          <p className="text-gray-400 max-w-16 text-xs">Years of Experience</p>
-        </div>
+        {yearsOfExp && (
+          <div className="flex items-center gap-2 ">
+            <p className="text-3xl font-bold text-secondary">{yearsOfExp}+</p>
+            <p className="text-gray-400 max-w-16 text-xs">
+              Years of Experience
+            </p>
+          </div>
+        )}
 
         {/* Technologies */}
-        <div className="flex items-end gap-2">
-          <p className="text-4xl font-bold text-secondary">{technologies}</p>
-          <p className="text-gray-400 max-w-16 text-xs mb-1">Technologies</p>
-        </div>
+        {technologies && (
+          <div className="flex items-end gap-2">
+            <p className="text-4xl font-bold text-secondary">{technologies}</p>
+            <p className="text-gray-400 max-w-16 text-xs mb-1">Technologies</p>
+          </div>
+        )}
       </div>
     </div>
   );
