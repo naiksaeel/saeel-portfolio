@@ -5,6 +5,7 @@ export type ThemeColors = {
   background: string;
   foreground: string;
   darkbg: string;
+  cardBg: string;
 };
 
 export type ThemeFontFamily = {

@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
-import ProjectCards from "@/components/projectCards";
+import SkillsOverview from "@/components/skillsOverview";
 import ContactAndInfoSection from "@/components/contactAndInfo";
 
 const HomePage = () => {
@@ -9,7 +9,7 @@ const HomePage = () => {
       <Header />
       <Hero />
       <ContactAndInfoSection />
-      <ProjectCards />
+      <SkillsOverview />
     </>
   );
 };
