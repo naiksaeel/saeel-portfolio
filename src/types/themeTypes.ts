@@ -4,6 +4,7 @@ export type ThemeColors = {
   accent: string;
   background: string;
   foreground: string;
+  darkbg: string;
 };
 
 export type ThemeFontFamily = {

@@ -1,14 +1,14 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import ProjectCards from "@/components/projectCards";
-import InfoSection from "@/components/infoSection";
+import ContactAndInfoSection from "@/components/contactAndInfo";
 
 const HomePage = () => {
   return (
     <>
       <Header />
       <Hero />
-      <InfoSection />
+      <ContactAndInfoSection />
       <ProjectCards />
     </>
   );

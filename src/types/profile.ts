@@ -14,5 +14,8 @@ export type ProfileDataType = {
   designation: string;
   location: string;
   bioData: string;
+  emailId: string;
+  yearsOfExp: number;
+  technologies: number;
   socials: SocialLinkType[];
 };

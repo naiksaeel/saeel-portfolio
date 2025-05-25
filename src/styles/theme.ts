@@ -7,6 +7,7 @@ export const theme: ThemeType = {
     accent: "#FFFFFF", // White text or highlight
     background: "#111321", // Slightly darker navy for sections
     foreground: "#CCCCCC", // Muted text color
+    darkbg: "#0E101A", // Dark background
   },
   fontFamily: {
     sans: ["Poppins", "sans-serif"],
