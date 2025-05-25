@@ -1,19 +1,22 @@
 import ContactSection from "@/components/contactAndInfo/contactSection";
 import InfoSection from "@/components/contactAndInfo/infoSection";
+import SectionContainer from "@/components/ui/sectionContainer";
 
 const ContactAndInfoSection = () => {
   return (
-    <section className="bg-darkbg text-white font-sans">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 min-h-96">
-        <div className="grid md:grid-cols-2 gap-10">
-          {/* Contact Info */}
-          <ContactSection />
+    <SectionContainer>
+      <section className="text-white font-sans">
+        <div className="px-8 md:px-12 py-16 min-h-96 max-w-screen-sm md:max-w-full mx-auto">
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Contact Info */}
+            <ContactSection />
 
-          {/* Quote + Stats */}
-          <InfoSection />
+            {/* Quote + Stats */}
+            <InfoSection />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </SectionContainer>
   );
 };
 

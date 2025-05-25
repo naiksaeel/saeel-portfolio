@@ -12,7 +12,7 @@ const RightSection = ({
 }: RightSectionProps) => {
   return (
     <div className="md:w-1/2 space-y-6 relative z-20">
-      <div className="relative z-10 text-right md:text-left">
+      <div className="relative z-10  md:text-left">
         <p className="text-lg tracking-widest text-gray-400 my-1">
           — Introduction
         </p>
