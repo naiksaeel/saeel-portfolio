@@ -15,6 +15,7 @@ export type bioDataType = {
   para2: string;
 };
 export type ProfileDataType = {
+  name: string;
   designation: string;
   location: string;
   bioData: string[];

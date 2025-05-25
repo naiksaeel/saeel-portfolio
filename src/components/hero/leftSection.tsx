@@ -9,7 +9,7 @@ import type { IconBaseProps } from "react-icons";
 import { ProfileDataType, SocialPlatformType } from "@/types/profile";
 
 // data
-import { iconMap } from "@/data/myInfo";
+import { iconMap, profileData } from "@/data/myInfo";
 
 // Images
 import { HeroImage } from "@/data/images";
@@ -17,6 +17,8 @@ import { HeroImage } from "@/data/images";
 export type LeftSectionProps = Pick<ProfileDataType, "socials">;
 
 const LeftSection = ({ socials }: LeftSectionProps) => {
+  const { name } = profileData;
+
   return (
     <div className="md:w-1/2 space-y-10 relative z-10">
       {/* Image */}
@@ -24,7 +26,7 @@ const LeftSection = ({ socials }: LeftSectionProps) => {
         <FadeUpRight duration="1200" easing="ease-out-cubic">
           <img
             src={HeroImage}
-            alt="Saeel Naik"
+            alt={name}
             className="w-full h-full object-cover rounded-xl bg-primary"
           />
         </FadeUpRight>
@@ -53,7 +55,7 @@ const LeftSection = ({ socials }: LeftSectionProps) => {
       {/* Name */}
       <FadeLeft delay="100" duration="400" easing="ease-in-out">
         <h1 className="text-6xl font-extrabold leading-tight tracking-tight z-10">
-          Saeel Naik
+          {name}
         </h1>
       </FadeLeft>
     </div>

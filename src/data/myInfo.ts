@@ -9,6 +9,7 @@ export const iconMap: Partial<Record<SocialPlatformType, React.ElementType>> = {
 };
 
 export const profileData: ProfileDataType = {
+  name: "Saeel Naik",
   designation: "Software Developer",
   location: "Goa, India",
   bioData: [
