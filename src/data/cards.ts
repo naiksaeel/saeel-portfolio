@@ -1,13 +1,5 @@
 // libraries
-import {
-  FaReact,
-  FaVuejs,
-  FaJsSquare,
-  FaHtml5,
-  FaCss3Alt,
-  FaNodeJs,
-  FaMobileAlt,
-} from "react-icons/fa";
+import { FaReact, FaVuejs, FaMobileAlt } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 // types
@@ -26,6 +18,8 @@ export const cardData: CardType[] = [
       "Vue.js",
       "Next.js",
       "Tailwind CSS",
+      "Bootstrap",
+      "MUI",
     ],
     fromColor: "#3D4168",
     toColor: "#50547A",
