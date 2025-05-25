@@ -1,8 +1,8 @@
 {
   "homepage": "https://naiksaeel.github.io/saeel-portfolio/",
-  "name": "my-app",
+  "name": "saeel-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
