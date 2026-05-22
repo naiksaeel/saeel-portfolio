@@ -10,12 +10,17 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
-  const navItems = useMemo(() => [
-    { label: "Home", id: "home" },
-    { label: "Skills", id: "skills" },
-    ...(projectsConfig.showProjectsSection ? [{ label: "Projects", id: "projects" }] : []),
-    { label: "Contact", id: "contact" },
-  ], []);
+  const navItems = useMemo(
+    () => [
+      { label: "Home", id: "home" },
+      { label: "Skills", id: "skills" },
+      ...(projectsConfig.showProjectsSection
+        ? [{ label: "Projects", id: "projects" }]
+        : []),
+      { label: "Contact", id: "contact" },
+    ],
+    []
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +29,9 @@ const Header = () => {
 
       // 2. Active section detection using viewport-relative bounding rect
       const scrollPosition = window.scrollY;
-      const isAtBottom = window.innerHeight + scrollPosition >= document.documentElement.scrollHeight - 100;
+      const isAtBottom =
+        window.innerHeight + scrollPosition >=
+        document.documentElement.scrollHeight - 100;
 
       if (isAtBottom) {
         setActiveSection(navItems[navItems.length - 1].id);
@@ -52,7 +59,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [navItems]);
 
-  const handleScrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+  const handleScrollToSection = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
     e.preventDefault();
     setActiveSection(id);
     const element = document.getElementById(id);
@@ -86,9 +96,11 @@ const Header = () => {
           <a
             href="#home"
             onClick={(e) => handleScrollToSection(e, "home")}
-            className="text-xl font-extrabold tracking-wider hover:text-secondary transition-colors duration-300"
+            className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-secondary/40 hover:border-secondary hover:bg-secondary/10 transition-all duration-300 group"
           >
-            SN<span className="text-secondary">.</span>
+            <span className="text-base font-black tracking-wide text-white group-hover:text-secondary transition-colors duration-300">
+              SN
+            </span>
           </a>
 
           {/* Desktop Navigation */}
@@ -118,7 +130,9 @@ const Header = () => {
         <div
           className={clsx(
             "fixed inset-x-0 top-[60px] bg-primary/95 border-b border-white/5 backdrop-blur-lg md:hidden transition-all duration-300 ease-in-out transform origin-top z-40",
-            isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
+            isOpen
+              ? "opacity-100 scale-y-100"
+              : "opacity-0 scale-y-0 pointer-events-none"
           )}
         >
           <nav className="flex flex-col px-8 py-6 space-y-5">
@@ -129,7 +143,9 @@ const Header = () => {
                 onClick={(e) => handleScrollToSection(e, item.id)}
                 className={clsx(
                   "text-lg font-bold transition-colors py-2 border-b border-white/5",
-                  activeSection === item.id ? "text-secondary" : "text-gray-400 hover:text-white"
+                  activeSection === item.id
+                    ? "text-secondary"
+                    : "text-gray-400 hover:text-white"
                 )}
               >
                 {item.label}
