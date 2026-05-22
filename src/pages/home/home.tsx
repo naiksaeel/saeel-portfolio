@@ -1,28 +1,36 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import SkillsOverview from "@/components/skillsOverview";
+import Projects from "@/components/projects";
 import ContactAndInfoSection from "@/components/contactAndInfo";
+import { projectsConfig } from "@/data/projects";
 import {
   ContactWrapper,
   HeaderWrapper,
   HeroWrapper,
   SkillsWrapper,
+  ProjectsWrapper,
 } from "@/components/ui/home";
 
 const HomePage = () => (
   <>
-    {/* <HeaderWrapper>
+    <HeaderWrapper>
       <Header />
-    </HeaderWrapper> */}
+    </HeaderWrapper>
     <HeroWrapper>
       <Hero />
     </HeroWrapper>
-    <ContactWrapper>
-      <ContactAndInfoSection />
-    </ContactWrapper>
     <SkillsWrapper>
       <SkillsOverview />
     </SkillsWrapper>
+    {projectsConfig.showProjectsSection && (
+      <ProjectsWrapper>
+        <Projects />
+      </ProjectsWrapper>
+    )}
+    <ContactWrapper>
+      <ContactAndInfoSection />
+    </ContactWrapper>
   </>
 );
 

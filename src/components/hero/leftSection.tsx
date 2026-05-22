@@ -10,6 +10,7 @@ import { ProfileDataType, SocialPlatformType } from "@/types/profile";
 
 // data
 import { iconMap, profileData } from "@/data/myInfo";
+import { projectsConfig } from "@/data/projects";
 
 // Images
 import { HeroImage } from "@/data/images";
@@ -54,9 +55,46 @@ const LeftSection = ({ socials }: LeftSectionProps) => {
 
       {/* Name */}
       <FadeLeft delay="100" duration="400" easing="ease-in-out">
-        <h1 className="text-6xl font-extrabold leading-tight tracking-tight z-10">
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight z-10 bg-gradient-to-r from-white via-slate-100 to-secondary bg-clip-text text-transparent">
           {name}
         </h1>
+      </FadeLeft>
+
+      {/* Call to Actions */}
+      <FadeLeft delay="200" duration="500" easing="ease-in-out" className="flex flex-wrap gap-4 pt-2">
+        <a
+          href={projectsConfig.showProjectsSection ? "#projects" : "#skills"}
+          onClick={(e) => {
+            e.preventDefault();
+            const targetId = projectsConfig.showProjectsSection ? "projects" : "skills";
+            const element = document.getElementById(targetId);
+            if (element) {
+              window.scrollTo({
+                top: element.offsetTop - 80,
+                behavior: "smooth"
+              });
+            }
+          }}
+          className="px-6 py-3 bg-secondary text-primary font-bold rounded-lg hover:bg-yellow-400 hover:shadow-lg hover:shadow-secondary/20 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+        >
+          View Work
+        </a>
+        <a
+          href="#contact"
+          onClick={(e) => {
+            e.preventDefault();
+            const element = document.getElementById("contact");
+            if (element) {
+              window.scrollTo({
+                top: element.offsetTop - 80,
+                behavior: "smooth"
+              });
+            }
+          }}
+          className="px-6 py-3 bg-white/5 border border-white/10 hover:bg-white/10 font-semibold rounded-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
+        >
+          Let's Talk
+        </a>
       </FadeLeft>
     </div>
   );

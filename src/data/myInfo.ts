@@ -17,7 +17,7 @@ export const profileData: ProfileDataType = {
     "Working in fast-paced, collaborative environments, I’m committed to writing clean, maintainable code and staying updated with industry trends. Known for strong problem-solving and teamwork skills, I contribute effectively to projects that meet both user needs and business goals.",
   ],
   emailId: "saeelnaik51@gmail.com",
-  yearsOfExp: 3,
+  yearsOfExp: 3.5,
   // technologies: 4,
   socials: [
     {
@@ -38,6 +38,7 @@ export const contactSection = {
   heading: "Let’s Talk Code, Ideas, and Everything In Between",
   paragraph:
     "I’m passionate about software development and always open to exchanging knowledge, insights, or having great discussions about the evolving tech landscape.",
+  showContactForm: false,
 };
 
 export const extras = {

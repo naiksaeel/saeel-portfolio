@@ -19,3 +19,7 @@ export const ContactWrapper: FC<WrapperProps> = ({ children }) => (
 export const SkillsWrapper: FC<WrapperProps> = ({ children }) => (
   <div className="bg-primary">{children}</div>
 );
+
+export const ProjectsWrapper: FC<WrapperProps> = ({ children }) => (
+  <div className="bg-darkbg">{children}</div>
+);
