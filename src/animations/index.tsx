@@ -43,7 +43,14 @@ const FadeOut: React.FC<AnimationProps> = ({
   ...rest
 }) => {
   return (
-    <div data-aos="fade-out" className={className} {...rest}>
+    <div
+      data-aos="fade-out"
+      data-aos-delay={delay}
+      data-aos-duration={duration}
+      data-aos-easing={easing}
+      className={className}
+      {...rest}
+    >
       {children}
     </div>
   );
@@ -58,7 +65,14 @@ const FadeLeft: React.FC<AnimationProps> = ({
   ...rest
 }) => {
   return (
-    <div data-aos="fade-left" className={className} {...rest}>
+    <div
+      data-aos="fade-left"
+      data-aos-delay={delay}
+      data-aos-duration={duration}
+      data-aos-easing={easing}
+      className={className}
+      {...rest}
+    >
       {children}
     </div>
   );
@@ -73,7 +87,14 @@ const FadeUpRight: React.FC<AnimationProps> = ({
   ...rest
 }) => {
   return (
-    <div data-aos="fade-up-right" className={className} {...rest}>
+    <div
+      data-aos="fade-up-right"
+      data-aos-delay={delay}
+      data-aos-duration={duration}
+      data-aos-easing={easing}
+      className={className}
+      {...rest}
+    >
       {children}
     </div>
   );
@@ -88,7 +109,14 @@ const SlideLeft: React.FC<AnimationProps> = ({
   ...rest
 }) => {
   return (
-    <div data-aos="slide-left" className={className} {...rest}>
+    <div
+      data-aos="slide-left"
+      data-aos-delay={delay}
+      data-aos-duration={duration}
+      data-aos-easing={easing}
+      className={className}
+      {...rest}
+    >
       {children}
     </div>
   );
@@ -104,7 +132,14 @@ const CustomEffect: React.FC<AnimationProps> = ({
   ...rest
 }) => {
   return (
-    <div data-aos={animation} className={className} {...rest}>
+    <div
+      data-aos={animation}
+      data-aos-delay={delay}
+      data-aos-duration={duration}
+      data-aos-easing={easing}
+      className={className}
+      {...rest}
+    >
       {children}
     </div>
   );
